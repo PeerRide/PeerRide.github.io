@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeerRide</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="peerride.jpg" type="image/jpeg">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        body {
+            line-height: 1.8;
+            color: #333;
+            font-size: 18px; /* Increase base font size */
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header h1 {
+            font-size: 2rem; /* Increased font size for header */
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #ff4b4b 0%, #ff6b6b 100%);
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem 4rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem; /* Larger font size for the hero section */
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.5rem; /* Larger paragraph text */
+        }
+
+        .cta {
+            background: #ff4b4b;
+            color: white;
+            padding: 1.25rem 2.5rem; /* Increased padding for the CTA button */
+            font-size: 1.25rem; /* Larger font for the CTA */
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1.5rem;
+        }
+        
+        .cta:hover {
+            background: #ff6b6b;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .scheduled-rideshare {
+            background: #f9f9f9;
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            font-size: 1.25rem; /* Increased font size for the rideshare section */
+        }
+        
+        .scheduled-rideshare h2 {
+            font-size: 2rem; /* Larger font for section headings */
+            margin-bottom: 1rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: #ffcccc;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-size: 1.25rem; /* Larger font size for feature cards */
+        }
+        
+        #waitlist-form {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            max-width: 640px;
+            height: 552px;
+            margin: 0 auto;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" style="text-decoration: none; color: black;">
+            <h1>PeerRide</h1>
+        </a>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to PeerRide</h1>
+        <p>The Ridesharing App Built For Rural Colleges</p>
+        <a href="#waitlist-form" class="cta">Join the Waitlist</a>
+    </section>
+    
+    <main class="content">
+        <!-- Scheduled Group Rideshare Section -->
+        <section class="scheduled-rideshare">
+            <h2>Scheduled Group Rideshare</h2>
+            <p>Have a car? Going to Boston next week? Take passengers with you for extra money.</p>
+            <p>Heading to Boston next week, but don’t know how? Reserve a seat in a PeerRide driver’s car.</p>
+        </section>
+        
+        <section class="features">
+            <div class="feature-card">
+                <h2>Feel Safe</h2>
+                <p>Travel with confidence knowing all drivers and passengers are verified students.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h2>Save & Earn</h2>
+                <p>Affordable rides for passengers and extra income opportunities for drivers.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Coming Soon to your Rural College</h2>
+            <p>Starting at Dartmouth College, with plans to expand to Middlebury, Colby, Colgate, and more.</p>
+        </section>
+        
+        <!-- Waitlist Form Section -->
+        <section id="waitlist-form">
+            <h2>Join the Waitlist</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeV1BaSxDwuPODqCookYCYgOqXKvGOwFPx7UAN03i--kdk0kg/viewform?embedded=true" width="640" height="552" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </section>
+    </main>
+</body>
+</html>
